@@ -1,3 +1,3 @@
 # django-todo
 
-A simplle Django todo app for educative purposes
+A simple Django todo app for educative purposes
