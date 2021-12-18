@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -12,11 +13,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="{% static 'css/sketchy_bootstrap.min.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-color: purple;
+            background-color: silver;
             font-family: 'Nunito', sans-serif;
             padding-top: 50px;
         }
@@ -40,13 +42,13 @@
             font-weight: 600;
         }
 
-        .container {
-            max-width: 550px;
-            margin: auto;
-            background-color: #fff;
-            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-        }
+<!--        .container {-->
+<!--            max-width: 550px;-->
+<!--            margin: auto;-->
+<!--            background-color: #fff;-->
+<!--            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);-->
+<!--            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);-->
+<!--        }-->
 
         input {
             outline: none;
@@ -112,12 +114,21 @@
 
         /*Handle Classes*/
 
+        .update-item {
+            color: green;
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px 16px;
+            user-select: none;
+        }
+
         .handle {
             display: inline-block;
             padding: 20px 16px;
             cursor: grab;
             user-select: none;
         }
+
 
         .handle:after,
         .handle:before {
